@@ -2,4 +2,16 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+-- return {
+--   -- add gruvbox
+--   { 'ellisonleao/gruvbox.nvim' },
+--
+-- }
+return {
+  {
+    'norcalli/nvim-colorizer.lua',
+    config = function()
+      require('nvim-colorizer').setup {}
+    end,
+  },
+}

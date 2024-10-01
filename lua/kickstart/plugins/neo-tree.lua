@@ -15,9 +15,27 @@ return {
   },
   opts = {
     filesystem = {
+      filtered_items = {
+        visible = true,
+        hide_dotfiles = false,
+        hide_by_name = {
+          'node_modules',
+          'venv',
+          '__pycache__',
+          '.pytest_cache',
+        },
+      },
       window = {
+        mappings_options = {
+          noremap = true,
+          nowait = true,
+        },
         mappings = {
           ['\\'] = 'close_window',
+          ['j'] = 'noop',
+          ['k'] = 'noop',
+          ['l'] = 'noop',
+          ['m'] = 'open',
         },
       },
     },
