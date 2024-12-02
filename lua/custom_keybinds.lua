@@ -26,6 +26,8 @@ vim.api.nvim_set_keymap('n', '<leader>n', ':e %:h/', { noremap = true, silent = 
 vim.api.nvim_set_keymap('n', '<leader><Shif-n>', ':!mkdir %:h/', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>m', ':BufferLineCycleNext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>j', ':BufferLineCyclePrev<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader><Shift-m>', ':BufferLineCloseRight<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader><Shift-j>', ':BufferLineCloseLeft<CR>', { noremap = true, silent = true })
 
 -- Create custom command for saving with sudo
 vim.api.nvim_create_user_command('Sw', 'w !sudo tee % > /dev/null', {})
